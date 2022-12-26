@@ -1,0 +1,11 @@
+const prompt = require('prompt-sync')();
+
+const str = prompt('enter a string: ');
+const strLength = str.length;
+var res = 'it is a palindrome';
+for(let i=0 ; i<strLength/2 ; i++){
+   if(str[i] != str[strLength-1-i]){
+    var res = 'it is not a palindrome';
+   } 
+}
+console.log(res);
